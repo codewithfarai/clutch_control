@@ -37,10 +37,11 @@ jobs:
 
     - name: Bump version
       run: |
-        poetry run cz bump --changelog --yes
+        poetry run cz bump --changelog
         
     - name: Push changes
       run: |
-        git push --follow-tags
+        git push origin main
+        git push origin --tags
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
