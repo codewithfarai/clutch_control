@@ -32,8 +32,8 @@ jobs:
 
     - name: Configure Git
       run: |
-        git config --local user.email "bump@github.com"
-        git config --local user.name "GitHub Action"
+        git config --local user.email "release.robot@beep.boop"
+        git config --local user.name "Release Robot 🤖"
 
     - name: Bump version
       run: |
