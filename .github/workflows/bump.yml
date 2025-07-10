@@ -37,7 +37,7 @@ jobs:
 
     - name: Bump version
       run: |
-        poetry run cz bump --changelog
+        poetry run cz bump --changelog --yes
         
     - name: Push changes
       run: |
